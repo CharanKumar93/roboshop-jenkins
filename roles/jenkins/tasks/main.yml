@@ -9,6 +9,5 @@
 
 - name: Create Pipeline Jobs
   ansible.builtin.include_tasks: pipeline.yml
-  vars:
   loop: "{{ pipeline_jobs }}"
 
