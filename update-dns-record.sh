@@ -15,3 +15,5 @@ echo '
 
 ZONE_ID="Z01921203I3IC6L44J4QQ"
 aws route53 change-resource-record-sets --hosted-zone-id ${ZONE_ID} --change-batch file:///tmp/jenkins.json | jq .
+
+
