@@ -13,6 +13,6 @@
 
 - name: Create Single Pipeline Jobs
   ansible.builtin.include_tasks: sbranch-pipeline.yml
-  loop: "{{ sbranch_pipeline_jobs:}}"
+  loop: "{{ sbranch_pipeline_jobs }}"
 
 
