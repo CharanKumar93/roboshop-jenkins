@@ -7,14 +7,11 @@
   register: out
   ignore_errors: yes
 
-- name: debug
-  debug:
-    msg:"{{out}}"
-
 - name: Create Config file
   ansible.builtin.template:
     src: s-job.xml
     dest: /tmp/s-job.xml
+  when: out.failed | bool
 
 - name: Create Job
   community.general.jenkins_job:
@@ -23,6 +20,5 @@
     url: http://172.31.13.219:8080
     user: admin
     password: "{{jenkins_password}}"
-
-
+  when: out.failed | bool
 
