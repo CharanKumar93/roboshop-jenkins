@@ -1,16 +1,16 @@
 ci_pipeline_jobs:
-    - { name: "frontend", dir: "CIPipelines" }
-    - { name: "cart", dir: "CIPipelines" }
-    - { name: "catalogue", dir: "CIPipelines" }
-    - { name: "user", dir: "CIPipelines" }
-    - { name: "payment", dir: "CIPipelines" }
-    - { name: "shipping", dir: "CIPipelines" }
+    - {name: "frontend", dir: "CIPipelines"}
+    - {name: "cart", dir: "CIPipelines"}
+    - {name: "catalogue", dir: "CIPipelines"}
+    - {name: "user", dir: "CIPipelines"}
+    - {name: "payment", dir: "CIPipelines"}
+    - {name: "shipping", dir: "CIPipelines"}
 
 folders:
     - CIPipelines
     - Infra
 
 sbranch_pipeline_jobs:
-  - {name: "roboshop-infra", dir: "Infra" }
+    - {name: "roboshop-infra", dir: "Infra"}
 
 
